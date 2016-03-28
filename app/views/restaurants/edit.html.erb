@@ -1,0 +1,10 @@
+<div class="form-box">
+  <h1>Edit <%= @restaurant.name %></h1>
+  <%= simple_form_for(@restaurant, html: { class: 'form-horizontal' }) do |f| %>
+    <%= f.input :name, placeholder: @restaurant.name %>
+    <%= f.input :address, placeholder: @restaurant.address %>
+    <%= f.input :city, placeholder: @restaurant.city %>
+    <%= f.input :capacity, placeholder: @restaurant.capacity %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
